@@ -1,4 +1,4 @@
-# DeepLearning.AI Journey
+# DeepLearning.AI Progress
 
 Hands-on learning and projects from my DeepLearning.AI journey, covering machine learning, deep learning, LLMs, RAG, agents, and MLOps.
 
