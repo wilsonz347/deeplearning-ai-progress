@@ -353,8 +353,6 @@ The final XGBoost model was evaluated on the held-out test period.
 | RMSE   | **195.37 bikes** |
 | R²     |       **0.8804** |
 
-> Update these values if the final run produces different metrics.
-
 ### Interpretation
 
 An **MAE of 132.96** means the model's predictions were off by approximately **133 bike rentals per hour on average**.
