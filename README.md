@@ -38,14 +38,18 @@ Each project documents the reasoning behind key modeling decisions, results on u
 ## Repository Structure
 
 ```text
-ml-ai-projects
+ml-ai-projects/
+├── README.md
+├── LICENSE
+├── .gitignore
 ├── machine-learning/
-│   ├── data/
-│   ├── models/
-│   ├── scripts/
-│   ├── notebooks/
-│   ├── README.md
-│   └── requirements.txt
+│   └── seoul-bike-demand/
+│       ├── data/
+│       ├── models/
+│       ├── notebooks/
+│       ├── scripts/
+│       ├── README.md
+│       └── requirements.txt
 ├── deep-learning/
 ├── pytorch/
 ├── generative-ai/
