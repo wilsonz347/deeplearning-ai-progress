@@ -349,17 +349,17 @@ The final XGBoost model was evaluated on the held-out test period.
 
 | Metric |          XGBoost |
 | ------ | ---------------: |
-| MAE    |  **76.60 bikes** |
-| RMSE   | **116.08 bikes** |
-| R²     |       **0.9578** |
+| MAE    |  **132.96 bikes** |
+| RMSE   | **195.37 bikes** |
+| R²     |       **0.8804** |
 
 > Update these values if the final run produces different metrics.
 
 ### Interpretation
 
-An **MAE of 76.60** means the model's predictions were off by approximately **77 bike rentals per hour on average**.
+An **MAE of 132.96** means the model's predictions were off by approximately **133 bike rentals per hour on average**.
 
-An **R² of 0.9578** means the model explained approximately **95.8% of the variation in hourly bike demand** on the held-out test period.
+An **R² of 0.8804** means the model explained approximately **88.0% of the variation in hourly bike demand** on the held-out test period.
 
 ---
 
@@ -448,11 +448,9 @@ To apply the approach to another city, the model should ideally be retrained usi
 
 ## Forecast Horizon
 
-The model uses historical demand features, so its forecasting horizon depends on what historical demand information is available at prediction time.
+The model is designed for short-term forecasting and uses historical demand features from the previous day and week (`lag_24` and `lag_168`) along with rolling demand averages.
 
-Removing `lag_1` makes the model less dependent on the immediately preceding hour, but multi-step forecasting still requires careful consideration of which historical features would be available for each future prediction.
-
-Longer-horizon forecasting should therefore be evaluated separately rather than assumed from the one-step test metrics.
+Removing `lag_1` reduces the model's dependence on the immediately preceding hour, making it more suitable for forecasting beyond the next hour. However, longer forecast horizons should still be evaluated separately.
 
 ---
 
