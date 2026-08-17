@@ -6,7 +6,7 @@ A collection of applied machine learning and AI projects focused on building and
 
 ### Machine Learning
 
-- [Seoul Bike Sharing Demand Forecasting](./machine-learning/)  
+- [Seoul Bike Sharing Demand Forecasting](/machine-learning/seoul-bike-demand)  
   Forecasted hourly bike rental demand using weather, temporal, operating-condition, and historical demand features.
 
   **Techniques:** XGBoost, feature engineering, cyclical encoding, lag and rolling features, time-series cross-validation
